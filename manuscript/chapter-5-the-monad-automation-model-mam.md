@@ -52,4 +52,4 @@ Monad defines automation attributes in the following areas:
 
 _**Notes**_
 ___
-  "Get-EventLog application" is provided by the sample code above and the rest come from the Monad base commands.  "Group source" counts the number of objects that have the same value for a particular property (i.e. how many times did a particular source show up?).  "Select -First 5" truncates the set of objects to only have the first 5.  "Format-Table" formats the objects and their properties a table
+"Get-EventLog application" is provided by the sample code above and the rest come from the Monad base commands.  "Group source" counts the number of objects that have the same value for a particular property (i.e. how many times did a particular source show up?).  "Select -First 5" truncates the set of objects to only have the first 5.  "Format-Table" formats the objects and their properties a table
