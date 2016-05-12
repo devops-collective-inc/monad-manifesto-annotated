@@ -9,7 +9,7 @@ Passing .Net objects to Cmdlets instead of text streams allows reflection-based 
 
 The same mechanism is used by the **SORT** CmdLet to sort a set of objects and the **FORMAT-TABLE** CmdLet to display the properties of a set of objects as a table.  Monad's utilities facilitate factoring common functions out of the Cmdlets which saves costs for the developer and increases power/consistency for Administrators.
 
-Integrating legacy commands[^9] is trivial because text streams are merely one type of .Net Object stream.  That said, once rendered into text, you lose the ability to operate upon it as a rich reflection-based object and are back into the world of prayer based parsing.
+Integrating legacy commands[^6-1] is trivial because text streams are merely one type of .Net Object stream.  That said, once rendered into text, you lose the ability to operate upon it as a rich reflection-based object and are back into the world of prayer based parsing.
 
 ## _6.2 - Monad Runtime Environment Components_
 The diagram below illustrates the major components of the Monad Runtime Environment:
@@ -61,5 +61,7 @@ MSH provides a full featured scripting language using the functions and syntax o
 In addition to writing traditional functions, users can use the scripting capabilities of MSH to write their own Cmdlets and to add or override verbs to existing CmdLet Nouns.
 
 ___
+
 **Notes**
-[^9]: Msh will be able to seamlessly invoke legacy commands and legacy shells will be able to seamless invoke Msh CmdLets.  (Msh will provide a mechanism to export CmdLets for access from the legacy shells)
+
+[^6-1]: ORIGINAL: Msh will be able to seamlessly invoke legacy commands and legacy shells will be able to seamless invoke Msh CmdLets.  (Msh will provide a mechanism to export CmdLets for access from the legacy shells)
