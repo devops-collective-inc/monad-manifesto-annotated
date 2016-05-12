@@ -1,0 +1,1 @@
+The Monad Manifesto is the original Jeffrey Snover-authored document that results in the Windows PowerShell we know today. This version includes community-contributed annotations, notes, and expansions.

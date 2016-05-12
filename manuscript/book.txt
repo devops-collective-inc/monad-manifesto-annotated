@@ -1,0 +1,11 @@
+About.txt
+chapter-1-what-is-monad.txt
+chapter-2-problem.txt
+chapter-3-the-traditional-approach-to-administrative-automation.txt
+chapter-4-new-approaches.txt
+chapter-5-the-monad-automation-model-mam.txt
+chapter-6-the-monad-shell-msh.txt
+chapter-7-the-monad-management-models-mmm.txt
+chapter-8-the-monad-remote-script-mrs.txt
+chapter-9-the-monad-management-console-mmc.txt
+chapter-10-value-propositions.txt
