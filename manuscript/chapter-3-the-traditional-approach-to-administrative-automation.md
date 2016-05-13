@@ -2,7 +2,7 @@
 
 The traditional[^3-1] model for administrative automation is powerful and successful.  It consists of:
 
-1.    A programmatic shell (e.g. sh, csh, ksh, bash) 
+1.    A programmatic shell (e.g. sh, csh, ksh, bash)[^3-5] 
 2.    A set of administrative commands (e.g. ifconfig, ps, chmod, kill) 
 3.    A set of text manipulation utilities (e.g. awk, grep, sed).  
 4.    Administrative GUIs layered on top of commands and utilities
@@ -13,7 +13,7 @@ When you step back and examine what is really going on when someone uses a pipel
 
 Because the executable outputs text, the downstream elements must use text manipulation utilities to try to get back to the original objects to do additional work.  While the basic model is extremely powerful, its intrinsic flaw is the tight binding of these operations and the use of unstructured text for integration[^3-3].  This requires clumsy, lossy, imprecise text manipulation utilities.
 
-The traditional model reflects the state of the technology that was available at the time it emerged.  .Net provides a new set of capabilities and opens up the possibility of new approaches.  These new approaches allow us to replace the traditional model with a decisively superior one.  That model is Monad.
+The traditional model reflects the state of the technology that was available at the time it emerged.  .Net provides[^3-6] a new set of capabilities and opens up the possibility of new approaches.  These new approaches allow us to replace the traditional model with a decisively superior one.  That model is Monad.
 
 ---
 **Notes**
@@ -25,4 +25,8 @@ The traditional model reflects the state of the technology that was available at
 [^3-3]: There's an enormous point here that's often missed. When you write a tool that produces text, downstream tools have to know how to process that text in the exact format you produced it. Your data is unstructured. If you change the output of your tool, everything that used to work with it, won't. Object orientation - that is, presenting data in a standardized structure that could be consumed by anything understanding "objects" - was one of the biggest differences between PowerShell and what had come before. Much of a Linux admin's time is spent in the grep/sed/awk cycle, since they've got to parse out text so the next tool has data to work with; PowerShell all but eliminates that entirely ancillary work.
 
 [^3-4]: Practical upshot of this is that tools - cmdlets, in the PowerShell world - should do one thing, and one thing only. Get objects, process objects, or format objects into text - pick just one, and do only that. If you do more than one, you start creating a monolithic tool that's less easy to re-use elsewhere. This do-one-thing concept has become a driving foundation for best practices in the PowerShell community, especially around toolmaking.
+
+[^3-5]: These examples emphasize the influence mainframe and UNIX had on Snover's design choices. 
+
+[^3-6]: Realistically, COM could have provided the same capabilities as it was object-oriented. However, by the time the Manifesto was written, COM was effectively deprecated and Microsoft had moved on to .NET.
 
