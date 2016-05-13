@@ -64,4 +64,4 @@ ___
 
 **Notes**
 
-[^6-1]: ORIGINAL: Msh will be able to seamlessly invoke legacy commands and legacy shells will be able to seamless invoke Msh CmdLets.  (Msh will provide a mechanism to export CmdLets for access from the legacy shells)
+[^6-1]: ORIGINAL: Msh will be able to seamlessly invoke legacy commands and legacy shells will be able to seamless invoke Msh CmdLets.  (Msh will provide a mechanism to export CmdLets for access from the legacy shells) [In fact, PowerShell never implemented an easy way for legacy commands to invoke cmdlets]
