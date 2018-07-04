@@ -11,9 +11,13 @@ Microsoft will localize all the user visible portions of these scenarios (Verbs,
 ## An Example
 Navigation provides a example of a Management Model. There will be a base class for all Cmdlets that want to do Navigation. This will define the verbs (pwd, cd, pushd, dirs, popd, dir), common error messages, and provide common implementations for common problems (pushd, dirs, and popd will be implemented once). That base class can then be subclassed to provide a consistent admin experience for a minimal amount of code. Once the admin learns how to use this model, they will be able to use to across a wide range of resources.
 Navigating the filesystem will be the default case:
+
 ![Example 1](images/example-1.png)
+
 The same commands can be used to explore the Registry:
+
 ![Example 2](images/example-2.png)
+
 The same commands can be used to explore the Help system, Active Directory, SQL databases, WMI or other namespaces.
 
 

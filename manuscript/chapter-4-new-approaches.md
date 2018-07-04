@@ -15,7 +15,7 @@ The traditional approach to building commands is inefficient.  Much of the effor
    * Log activity.
    * Format data, output results and report errors.
    * Operate on remote nodes or sets of remote nodes.
-   
+
 Yet, despite all this commonality, most platforms[^4-1][^4-2] provide little to no support for doing these activities in common consistent ways. The result is that today's commands are inefficient to develop and inconsistent to use[^4-6].
 
 Monad takes a different approach providing developers maximal leverage and end users maximal consistency by defining an **automation model** for applications which factors out common functions so they can be implemented once in a common runtime environment[^4-3].  Developers no longer produce stand alone executables.  Instead, they write narrowly focused .Net classes ( **Cmdlets** ) which then are exposed as APIs, commands, and GUIs.  The common functions are implemented and tested once and provide a single set of semantics as well as a consistent and uniform set of error messages.[^4-7]
@@ -42,7 +42,8 @@ Monad takes a different approach providing a **rich set of management oriented s
 ___
 
 **Notes:**
-[^4-1]: ORIGINAL: UNIX has the [getopt()](http://www.gnu.org/software/libc/manual/html_node/Using-Getopt.html) call for simple command option parsing. 
+
+[^4-1]: ORIGINAL: UNIX has the [getopt()](http://www.gnu.org/software/libc/manual/html_node/Using-Getopt.html) call for simple command option parsing.
 
 [^4-2]: ORIGINAL: [VMS DCL](http://h71000.www7.hp.com/doc/732final/9996/9996pro.html) and AS400’s CL are the exceptions to this.  They provide a common command parser so the commands that use this have a high degree of syntactic consistency.
 
@@ -58,6 +59,6 @@ ___
 
 [^4-8]: An "object" in this sense is little more than a set of structured data, not unlike a database table or a spreadsheet. Each object represents some management component, and its properties represent bits of information about that object. Commands don't have to parse these objects to find data, because .Net understands the object structure and can simply retrieve bits of information by referring to the property names.
 
-[^4-9]: One of the first oblique references to what became PowerShell Remoting, which is indeed a web service based on WS-MAN (Web Services for Management). 
+[^4-9]: One of the first oblique references to what became PowerShell Remoting, which is indeed a web service based on WS-MAN (Web Services for Management).
 
 [^4-10]: PowerShell never really went with specific base classes for these different scenarios, but this is the origin of PowerShell's standardized list of verbs to be used in cmdlet names. This concept also drove the creation of the PSProvider and PSDrive abstraction, wherein any data store could be exposed as a "disk drive," thus enabling a standardized set of commands to manipulate any data store so exposed.

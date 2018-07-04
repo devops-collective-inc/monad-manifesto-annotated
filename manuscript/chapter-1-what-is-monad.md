@@ -1,12 +1,12 @@
 # Chapter 1 - What is Monad?
 ___
-Monad[^1-1][^1-2] is the next generation platform for administrative automation. Monad solves traditional management problems by leveraging the [.Net Platform](http://bit.ly/1PAsRao). From our prototype (though limited), we can project significant benefits to developers, testers, power users, and administrators. Monad leverages[^1-6] the [.NET Common Runtime](http://bit.ly/1Q0TrV3) to provide a powerful, consistent, intuitive, extensible and useful set of tools that drive down costs of administration and make the life of non-programmers a lot easier. 
+Monad[^1-1][^1-2] is the next generation platform for administrative automation. Monad solves traditional management problems by leveraging the [.Net Platform](http://bit.ly/1PAsRao). From our prototype (though limited), we can project significant benefits to developers, testers, power users, and administrators. Monad leverages[^1-6] the [.NET Common Runtime](http://bit.ly/1Q0TrV3) to provide a powerful, consistent, intuitive, extensible and useful set of tools that drive down costs of administration and make the life of non-programmers a lot easier.
 
 Monad consists of:
 
 1. [Monad Automation Model (MAM)](): An automation model based upon [.Net classes](http://bit.ly/1R9oPTO), methods and attributes to produce [Cmdlets](https://msdn.microsoft.com/en-us/library/ms714395(v=vs.85).aspx).[^1-3]
 2. [Monad Shell (MSH)](): A .Net based script execution environment for exposing Cmdlets as [API](https://msdn.microsoft.com/en-us/library/ms123401.aspx)s command line tools and interactive programmable command line shell.
-3. [Monad Management Models (MMM)](): The set managed code base classes (or interfaces) to implement specific management scenarios and in-the-box administrative tools to execute those scenarios.  
+3. [Monad Management Models (MMM)](): The set managed code base classes (or interfaces) to implement specific management scenarios and in-the-box administrative tools to execute those scenarios.
 4. [Monad Remote Scripting (MRS)](): A set of [Web Service](https://msdn.microsoft.com/en-us/library/ms950421.aspx) based components that allow scripts to be remotely executed on many machines[^1-4].
 5. [Monad Management Console (MMC)](): A .Net based model and set of services for building management GUIs on top of [MSH](https://technet.microsoft.com/en-us/magazine/2005.11.scripting.aspx) and exposing all GUI interactions as user-visible scripts[^1-5].
 

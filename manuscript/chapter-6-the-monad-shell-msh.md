@@ -3,6 +3,7 @@ Monad provides a runtime environment for creating highly consistent, powerful, d
 
 ## _6.1 - Pipelines of .Net Objects_
 Monad takes user input, builds a pipeline of Cmdlets for each of the commands, parses and encodes the user input for each command into a CmdLet Request Object (CRO).  The script execution engine then sequences the pipeline.  The first Cmdlet is invoked and passed its CRO as a parameter.  This Cmdlet returns a set of .Net objects which are then processed and passed to the next Cmdlet along with its CRO and so on until the pipeline is complete.
+
 ![Pipelines](images/pipelines.png)
 
 Passing .Net objects to Cmdlets instead of text streams allows reflection-based utilities to provide a function for any .Net object.  In the example above, the **WHERE** CmdLet filters a set of objects based upon a test of those object's properties.  It takes objects of any type (e.g. Processes, Files, Disks, etc) and queries for its type using the .Net reflection APIs.  Using the Type, it queries for the existence of the property specified by the user ("HandleCount").  It uses this information to query each object for the value of that property and performs the test on that property and to filter the object appropriately.
@@ -12,7 +13,9 @@ The same mechanism is used by the **SORT** CmdLet to sort a set of objects and t
 Integrating legacy commands[^6-1] is trivial because text streams are merely one type of .Net Object stream.  That said, once rendered into text, you lose the ability to operate upon it as a rich reflection-based object and are back into the world of prayer based parsing.
 
 ## _6.2 - Monad Runtime Environment Components_
+
 The diagram below illustrates the major components of the Monad Runtime Environment:
+
 ![Runtime](images/runtime.png)
 
 

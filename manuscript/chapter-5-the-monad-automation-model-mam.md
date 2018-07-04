@@ -10,6 +10,7 @@ Developers express an automation model to Admins as a set of user-friendly nouns
 Imagine the developer who needs to expose the Windows eventlog for reporting automation.  The developer decides how to structure the automation in terms of nouns and verbs ("Get-EventLog").  Monad provides strong guidance on this subject.  The developer then writes a CmdLet (in C#, VB.NET, COBOL, etc) to expose this function.
 
 A CmdLet might look like this[^5-1]:
+
 ![Example 3](images/example-3.png)
 
 At first glance it might appear that the Admin is not going to get much use from this code but nothing could be further from the truth.  Using the CmdNoun and CmdVerb attributes automatically registers this CmdLet as the command *"Get-EventLog"* with a single parameter *"LogName"*.  The Admin then uses this command along with a set of base utility commands to compose a rich set of scenarios:
@@ -21,6 +22,7 @@ _What is filling up my application log?_[^5-2]
 _Why is MsiInstaller filling up my log?_
 
 ![Example 5](images/example-5.png)
+
 By changing the last CmdLet in the pipeline, this information can be output in XML, CSV, LIST, HTML, EXCEL or any other format.
 
 _Is my eventlog usage regular across the week?_
@@ -58,4 +60,4 @@ _**Notes**_
 
 [^5-3]: Note that even in this document, Snover wasn't consistent about "CmdLet" versus "Cmdlet." Today, "cmdlet" is the standard. His original idea was to emphasize that a "cmdlet" wasn't a "full command" with all the parsing and whatnot a traditional command implemented; instead, it was a portion of a command, with much of the overhead being provided by the automation engine's base classes.
 
-[^5-4]: Meaning, a .NET developer can tell the .NET runtime to perform certain standardized tasks. You see this a lot in PowerShell: for example, a function can declare a parameter as mandatory, and the shell will enforce that attribtue rather than the function developer having to write logic to do so. 
+[^5-4]: Meaning, a .NET developer can tell the .NET runtime to perform certain standardized tasks. You see this a lot in PowerShell: for example, a function can declare a parameter as mandatory, and the shell will enforce that attribtue rather than the function developer having to write logic to do so.
